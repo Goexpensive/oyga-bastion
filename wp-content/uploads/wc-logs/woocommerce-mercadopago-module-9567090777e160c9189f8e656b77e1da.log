@@ -1,0 +1,149 @@
+07-12-2016 @ 00:32:47 - woocommerce-mercadopago-module: @[process_payment] - preparing to render Mercado Pago checkout view.
+07-12-2016 @ 00:32:53 - woocommerce-mercadopago-module: @[buildPaymentPreference] - requesting mercado pago preference creation with following structure: {
+    "items": [
+        {
+            "id": "2742",
+            "title": "Indian Pale Ale x 1",
+            "description": "Estilo originado en inglaterra, la Porter evoluciono a partir de un blend de cervezas conocida como \"Entire\" y es la precursora de la Stout. Se caracteriza por un aroma marcado a malta con leve caracter tostado y achocolatado.\r\n\r\n...",
+            "picture_url": "<img width=\"114\" height=\"130\" src=\"http:\/\/localhost\/oyga-sites\/oyga-bastion\/wp-content\/uploads\/2016\/07\/ipa-1-114x130.png\" class=\"attachment-shop_thumbnail size-shop_thumbnail wp-post-image\" alt=\"ipa\" \/>",
+            "category_id": "art",
+            "quantity": 1,
+            "unit_price": 50,
+            "currency_id": "ARS"
+        },
+        {
+            "title": "Free!",
+            "description": "Shipping service used by store",
+            "category_id": "art",
+            "quantity": 1,
+            "unit_price": 0,
+            "currency_id": "ARS"
+        }
+    ],
+    "payer": {
+        "name": "Fabio",
+        "surname": "Test",
+        "email": "test@test.com",
+        "phone": {
+            "number": "1160247073"
+        },
+        "address": {
+            "street_name": "Alsina 1774 \/ Buenos Aires B AR",
+            "zip_code": "1088"
+        }
+    },
+    "back_urls": {
+        "success": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/checkout\/order-received\/2751?key=wc_order_57843aaf22b12",
+        "failure": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/cart\/?cancel_order=true&order=wc_order_57843aaf22b12&order_id=2751&redirect",
+        "pending": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/checkout\/order-received\/2751?key=wc_order_57843aaf22b12"
+    },
+    "shipments": {
+        "receiver_address": {
+            "zip_code": "1088",
+            "street_name": "Alsina 1774 Buenos Aires B AR",
+            "apartment": ""
+        }
+    },
+    "payment_methods": {
+        "installments": 24,
+        "default_installments": 1
+    },
+    "notification_url": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/index.php\/woocommerce-mercadopago-module\/?wc-api=WC_WooMercadoPago_Gateway",
+    "external_reference": "WC-2751",
+    "sponsor_id": 208682286,
+    "auto_return": "approved"
+}
+07-12-2016 @ 00:32:53 - woocommerce-mercadopago-module: @[createUrl] - sandbox mode is enabled
+07-12-2016 @ 00:32:55 - woocommerce-mercadopago-module: @[createUrl] - payment link generated with success from mercado pago, with structure as follow: {
+    "status": 201,
+    "response": {
+        "collector_id": 220832415,
+        "sponsor_id": 208682286,
+        "operation_type": "regular_payment",
+        "items": [
+            {
+                "id": "2742",
+                "title": "Indian Pale Ale x 1",
+                "description": "Estilo originado en inglaterra, la Porter evoluciono a partir de un blend de cervezas conocida como \"Entire\" y es la precursora de la Stout. Se caracteriza por un aroma marcado a malta con leve caracter tostado y achocolatado.\r\n\r\n...",
+                "category_id": "art",
+                "picture_url": "<img width=\"114\" height=\"130\" src=\"http:\/\/localhost\/oyga-sites\/oyga-bastion\/wp-content\/uploads\/2016\/07\/ipa-1-114x130.png\" class=\"attachment-shop_thumbnail size-shop_thumbnail wp-post-image\" alt=\"ipa\" \/>",
+                "currency_id": "ARS",
+                "quantity": 1,
+                "unit_price": 50
+            },
+            {
+                "id": "",
+                "title": "Free!",
+                "description": "Shipping service used by store",
+                "category_id": "art",
+                "picture_url": "",
+                "currency_id": "ARS",
+                "quantity": 1,
+                "unit_price": 0
+            }
+        ],
+        "payer": {
+            "name": "Fabio",
+            "surname": "Test",
+            "email": "test@test.com",
+            "date_created": "",
+            "phone": {
+                "area_code": "",
+                "number": "1160247073"
+            },
+            "identification": {
+                "type": "",
+                "number": ""
+            },
+            "address": {
+                "street_name": "Alsina 1774 \/ Buenos Aires B AR",
+                "street_number": null,
+                "zip_code": "1088"
+            }
+        },
+        "back_urls": {
+            "success": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/checkout\/order-received\/2751?key=wc_order_57843aaf22b12",
+            "pending": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/checkout\/order-received\/2751?key=wc_order_57843aaf22b12",
+            "failure": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/cart\/?cancel_order=true&order=wc_order_57843aaf22b12&order_id=2751&redirect"
+        },
+        "auto_return": "approved",
+        "payment_methods": {
+            "excluded_payment_methods": [
+                {
+                    "id": ""
+                }
+            ],
+            "excluded_payment_types": [
+                {
+                    "id": ""
+                }
+            ],
+            "installments": 24,
+            "default_payment_method_id": null,
+            "default_installments": 1
+        },
+        "client_id": "963",
+        "marketplace": "NONE",
+        "marketplace_fee": 0,
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "1088",
+                "street_number": null,
+                "street_name": "Alsina 1774 Buenos Aires B AR",
+                "floor": "",
+                "apartment": ""
+            }
+        },
+        "notification_url": "http:\/\/localhost\/oyga-sites\/oyga-bastion\/index.php\/woocommerce-mercadopago-module\/?wc-api=WC_WooMercadoPago_Gateway",
+        "external_reference": "WC-2751",
+        "additional_info": "",
+        "expires": false,
+        "expiration_date_from": null,
+        "expiration_date_to": null,
+        "date_created": "2016-07-11T20:32:55.578-04:00",
+        "id": "220832415-ed8c87de-8aa4-44bc-9df8-c9a7c653f49f",
+        "init_point": "https:\/\/www.mercadopago.com\/mla\/checkout\/start?pref_id=220832415-ed8c87de-8aa4-44bc-9df8-c9a7c653f49f",
+        "sandbox_init_point": "https:\/\/sandbox.mercadopago.com\/mla\/checkout\/pay?pref_id=220832415-ed8c87de-8aa4-44bc-9df8-c9a7c653f49f"
+    }
+}
+07-12-2016 @ 00:32:55 - woocommerce-mercadopago-module: @[renderOrderForm] - embedding Mercado Pago iFrame.

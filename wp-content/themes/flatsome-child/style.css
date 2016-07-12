@@ -1,0 +1,37 @@
+/*
+Theme Name: Flatsome Child Theme
+Theme URI: http://flatsome.uxthemes.com/
+Description: This is a child theme for Flatsome
+Author: UX Themes
+Author URI: http: //www.uxthemes.com/
+Template: flatsome
+Version: 2.5
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+/*
+ *
+ * Front Page Styles
+ *
+*/
+/*@keyframes font_color {
+    from {color: #000000;}
+    to {color: #FFFFFF;}
+}
+div.inner-wrap h1, div.inner-wrap h3 {
+	color: #FFFFFF;
+	animation-name: font_color;
+    animation-duration: 22.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}*/
+
+
+
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
